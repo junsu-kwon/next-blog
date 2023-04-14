@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import profileImg from '../public/images/profile.png';
-import MoveButton from '@/components/MoveButton';
+import Link from 'next/link';
 
 export default function Profile() {
   return (
@@ -16,11 +16,12 @@ export default function Profile() {
           <p className="text-2xl">Hi, I&apos;m Junsu</p>
           <p className="text-sm mt-1">front-end engineer</p>
           <p className="text-xs mt-2">비드코칭연구소 제품완성 팀</p>
-          <MoveButton
+          <Link
             href="/contact"
             className="text-xs bg-yellow-300 text-black py-0.5 px-2 hover:bg-yellow-400 rounded-full mt-2"
-            text="Contact Me"
-          />
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
     </section>
