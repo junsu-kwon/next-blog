@@ -25,8 +25,8 @@ export async function POST(request: Request) {
       host: 'smtp.naver.com', // SMTP 서버명
       port: 465, // SMTP 포트
       auth: {
-        user: 'wnstn7410@naver.com',
-        pass: '353zsz130620',
+        user: '',
+        pass: '',
       },
     });
 
