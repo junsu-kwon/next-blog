@@ -95,3 +95,10 @@ export default async function PostDetailPage({
     </section>
   );
 }
+
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map(({ path }) => ({
+    slug: path,
+  }));
+}
